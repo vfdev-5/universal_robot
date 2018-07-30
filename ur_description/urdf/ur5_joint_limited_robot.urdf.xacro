@@ -18,10 +18,10 @@
     wrist_3_lower_limit="${-pi}" wrist_3_upper_limit="${pi}"
   />
 
-  <link name="world" />
+  <link name="base_link_no_inertia" />
 
-  <joint name="world_joint" type="fixed">
-    <parent link="world" />
+  <joint name="base_link_no_inertia_joint" type="fixed">
+    <parent link="base_link_no_inertia" />
     <child link = "base_link" />
     <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
   </joint>
